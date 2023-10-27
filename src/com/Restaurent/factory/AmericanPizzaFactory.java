@@ -4,7 +4,7 @@ import com.Restaurent.pizza.IPizza;
 import com.Restaurent.pizza.american.AmericanGarlicSteakPizza;
 import com.Restaurent.pizza.american.AmericanPepperoniPizza;
 
-public class AmericanPizzaFactory implements IFactory{
+public class AmericanPizzaFactory implements IPizzaFactory {
 
     @Override
     public IPizza createPizza(String name) throws Exception {

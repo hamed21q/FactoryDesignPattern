@@ -1,13 +1,13 @@
 package com.Restaurent;
 
-import com.Restaurent.factory.IFactory;
+import com.Restaurent.factory.IPizzaFactory;
 import com.Restaurent.pizza.IPizza;
 
 public class PizzaStore {
 
-    private final IFactory factory;
+    private final IPizzaFactory factory;
 
-    public PizzaStore(IFactory factory) {
+    public PizzaStore(IPizzaFactory factory) {
         this.factory = factory;
     }
 

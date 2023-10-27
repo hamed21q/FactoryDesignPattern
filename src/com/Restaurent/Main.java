@@ -1,16 +1,14 @@
 package com.Restaurent;
 
 import com.Restaurent.factory.AmericanPizzaFactory;
-import com.Restaurent.factory.IFactory;
+import com.Restaurent.factory.IPizzaFactory;
 import com.Restaurent.factory.ItalianPizzaFactory;
-import com.Restaurent.pizza.IPizza;
-import com.Restaurent.pizza.italian.ItalianPepperoniPizza;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        IFactory italianFactory = new ItalianPizzaFactory();
-        IFactory americanFactory = new AmericanPizzaFactory();
+        IPizzaFactory italianFactory = new ItalianPizzaFactory();
+        IPizzaFactory americanFactory = new AmericanPizzaFactory();
 
 
         PizzaStore americanStore = new PizzaStore(americanFactory);
